@@ -3,4 +3,3 @@
  At the same time, I am also a novice educator and only a decent programmer. I will certainly make mistakes along the way and hope to learn a lot myself. Please feel free to open an issue if you feel that I have discussed some concept erroneously. Furthermore, I am glad to hear suggestions in the same way.
  ## User Guide
  <Work in Progress>
- # Author: Stephen Bothwell (Mythologos)
