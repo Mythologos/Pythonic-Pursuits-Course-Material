@@ -3,3 +3,5 @@
  At the same time, I am also a novice educator and only a decent programmer. I will certainly make mistakes along the way and hope to learn a lot myself. Please feel free to open an issue if you feel that I have discussed some concept erroneously. Furthermore, I am glad to hear suggestions in the same way.
  ## User Guide
 Note: this is a major work in progress. What is currently listed is unpolished and requires further review, official citations, and a general clean-up. The author will get to this as soon as possible.
+
+My future intention is to make this set of lectures available for free use and expansion. However, while I am currently writing and revising them, I will currently not impose further licensure on this project.
