@@ -7,4 +7,6 @@ def remove_punctuation(string):
         .replace('"', '')
 
 
-print(remove_punctuation("""Here's the gist of it: "What are those?!" is a dumb meme. Don't talk to me again; I don't want to hear your low-brow humor any more, cretin."""))
+print(remove_punctuation("Here's the gist of it: your shock when you saw the body tells me " +
+                         "everything I needed to know. Aren't I right? You definitely saw the corpse beforehand; " +
+                         "the only reason you'd have to hide that fact ... is that you are the murderer yourself!"))
