@@ -14,23 +14,22 @@ def poll(question, answer_one, answer_two, answer_three, answer_four, num_poller
     a3_count: int = 0
     a4_count: int = 0
 
-    while(num_pollers > 0):
+    while num_pollers > 0:
         poll_response: str = input(">> ")
-        if(poll_response == answer_one):
+        if poll_response == answer_one:
             a1_count = a1_count + 1
             num_pollers = num_pollers - 1
-        elif(poll_response == answer_two):
+        elif poll_response == answer_two:
             a2_count = a2_count + 1
             num_pollers = num_pollers - 1
-        elif(poll_response == answer_three):
+        elif poll_response == answer_three:
             a3_count = a3_count + 1
             num_pollers = num_pollers - 1
-        elif(poll_response == answer_four):
+        elif poll_response == answer_four:
             a4_count = a4_count + 1
             num_pollers = num_pollers - 1
         else:
             print("That response was invalid.")
-
     print("Poll results:")
     print(answer_one + ": " + str(a1_count))
     print(answer_two + ": " + str(a2_count))

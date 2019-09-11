@@ -1,9 +1,9 @@
-
 def NOT(bool1):
     return_value = True
     if bool1:
         return_value = False
     return return_value
+
 
 def AND(bool1, bool2):
     return_value = False
@@ -12,6 +12,7 @@ def AND(bool1, bool2):
             return_value = True
     return return_value
 
+
 def OR(bool1, bool2):
     return_value = False
     if bool1:
@@ -19,6 +20,7 @@ def OR(bool1, bool2):
     elif bool2:
         return_value = True
     return return_value
+
 
 # not operator:
 print(NOT(True)) # should return False
