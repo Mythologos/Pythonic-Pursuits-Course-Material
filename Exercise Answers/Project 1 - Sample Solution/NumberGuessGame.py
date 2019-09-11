@@ -1,15 +1,22 @@
-# The following will contain two functions.
-# The first will be a number-guessing game in which an integer is supplied as an argument.
-# Then, the game starts and proceeds until the correct integer is guessed.
-# The program reports back on each input whether it is above or below the target number.
-# The second will be the same as the first, but will take an upper value which will determine the range of guessing.
-# This value will be obtained during runtime.
+"""
+This program contains code to run two types of number-guessing games.
+The first will be a number-guessing game in which an integer is supplied as an argument--
+in other words, where the number to be guessed is known.
+This game serves to help students to understand the logic of their program and to debug it as needed.
+The second will have the user supply an upper limit for a randomization of the number to guess.
+In both of the above games, the program reports back on each input whether it is above or
+below the target number. Both of these games can be accessed via a menu;
+there is also a help command for the game that displays instructions.
+"""
 
 import random
 
 
-def known_hc():
-    # type: () -> None
+def known_hc() -> None:
+    """
+    This method executes the number-guessing game in which the seek value is known.
+    :return: None.
+    """
     start_condition: bool = False
     seek_value: int = 0
     while not start_condition:
@@ -39,8 +46,12 @@ def known_hc():
         print("Congratulations! You won!")
 
 
-def unknown_hc():
-    # type: () -> None
+def unknown_hc() -> None:
+    """
+    This method executes the number-guessing game in which the seek value is unknown.
+    Instead, the user may supply the upper limit for teh range of seek values.
+    :return: None.
+    """
     upper_value: int = 0
     while not upper_value:
         uv_input_string = input("Please supply an upper limit for the game: ").strip()
@@ -77,7 +88,11 @@ def unknown_hc():
         print("Congratulations! You won!")
 
 
-def introduction():
+def introduction() -> None:
+    """
+    This method displays the introduction for the number-guessing game's menu.
+    :return: None.
+    """
     print("Welcome to the Number-Guess Menu.")
     print("There are two variants available for the Number Guessing Game.")
     print("The Known variant requires you to supply a number that is the answer at the beginning.")
@@ -86,13 +101,22 @@ def introduction():
     help_message()
 
 
-def help_message():
+def help_message() -> None:
+    """
+    This method displays a help message for the player so that they know what commands are available.
+    :return: None.
+    """
     print("To select a game, please type Known or Unknown. To quit, type Quit.")
     print("To repeat your options, type Help.")
 
 
-def main_menu():
-    # type: () -> None
+def main_menu() -> None:
+    """
+    This method runs the main menu as the user needs it.
+    It allows access to both of the number-guessing games, the help message, and the ability to
+    end the program with the commands "known", "unknown", "help", and "quit", respectively.
+    :return: None.
+    """
     game_condition: bool = True
     while game_condition:
         introduction()
